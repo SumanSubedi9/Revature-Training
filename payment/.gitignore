@@ -1,0 +1,45 @@
+# Maven / Java
+/target/
+**/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Build / compiled output
+/build/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+/.idea/
+/*.iml
+/.idea/**/*
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+/.vscode/
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+*.tmp
+
+# Credentials / environment
+.env
+*.jks
+*.keystore
+secrets.properties
+
+# OS generated files
+ehthumbs.db
+Icon?
+
+# Other
+*.class

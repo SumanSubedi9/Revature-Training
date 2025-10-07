@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define implementations of PaymentInterface -->
+    <bean id="creditCardPayment" class="com.revature.spring.ioc.CreditCardPayment" />
+
+    <bean id="paypalPayment" class="com.revature.spring.ioc.PaypalPayment" />
+
+    <!-- Define a factory that chooses a payment implementation at startup -->
+    <bean id="randomPaymentFactory" class="com.revature.spring.ioc.RandomPaymentFactory">
+        <property name="creditCardPayment" ref="creditCardPayment" />
+        <property name="paypalPayment" ref="paypalPayment" />
+    </bean>
+
+    <!-- Create paymentProcessor using the factory's createPaymentProcessor method -->
+    <bean id="paymentProcessor" factory-bean="randomPaymentFactory"
+        factory-method="createPaymentProcessor" />
+
+</beans>
