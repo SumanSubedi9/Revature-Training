@@ -1,0 +1,94 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the form */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form box */
+.form-container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border: 2px solid #007bff; /* Strong blue border */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Makes it responsive */
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+/* Input fields, dropdowns, and text area */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+/* Gender radio buttons */
+.gender-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.gender-group label {
+  font-weight: normal;
+}
+
+/* Button */
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Make it mobile friendly */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 20px;
+    border-width: 1.5px;
+  }
+
+  .gender-group {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
