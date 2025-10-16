@@ -3,9 +3,187 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Website</title>
+    <title>Suman Subedi | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Hello, My Name is Suman Subedi.</h1>
+    <!-- Header / Navigation -->
+    <header>
+      <h1 class="logo">Suman Subedi</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <img
+          src="images/profile-picture.jpg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <h2>Full Stack Developer</h2>
+        <p>
+          Building clean, efficient, and creative web experiences using modern
+          technologies.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>
+        I’m Suman Subedi, a Computer Science graduate from Texas A&M
+        University–Texarkana with a concentration in Software Engineering and
+        Cybersecurity. I enjoy building full-stack web applications and
+        continuously learning new technologies to improve performance, design,
+        and scalability.
+      </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Texas A&M University Texarkana</h3>
+        <p>
+          <strong>Bachelor of Science in Computer Science</strong> – May 2024
+        </p>
+        <p>Concentration: Software Engineering & Cybersecurity</p>
+        <p>GPA: 3.6 / 4.0 | Honor Graduate</p>
+        <p>
+          Relevant Coursework: Software Engineering, Operating Systems,
+          Algorithms, Artificial Intelligence, System Design
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Waypoint</h3>
+          <p>
+            A full-stack travel diary app built with React and Supabase.
+            Integrated Leaflet API for interactive maps, React Context API for
+            state management, and React Query for data fetching and caching.
+          </p>
+          <a href="https://mywaypoint.vercel.app/" target="_blank" class="btn"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/SumanSubedi9"
+            target="_blank"
+            class="btn-outline"
+            >GitHub</a
+          >
+        </div>
+
+        <div class="project-card">
+          <h3>Social Media Blog API</h3>
+          <p>
+            A RESTful API built using Java and Spring Boot enabling user
+            registration, authentication, and CRUD operations with secure
+            validation and JPA persistence.
+          </p>
+          <a
+            href="https://github.com/Suman-Subedi/Suman-Subedi-pep-spring-project"
+            target="_blank"
+            class="btn-outline"
+            >GitHub Repo</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2>Work Experience</h2>
+      <div class="card">
+        <h3>Revature | Java Intern, Back-End Developer</h3>
+        <p><em>Apr 2025 – Jun 2025</em></p>
+        <ul>
+          <li>
+            Developed REST APIs using Spring Boot and Test-Driven Development
+            (JUnit, Mockito).
+          </li>
+          <li>
+            Designed database interactions using JDBC and JPA, improving query
+            efficiency.
+          </li>
+          <li>
+            Collaborated with teams using Maven for dependency management and
+            Git for version control.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h4>Languages</h4>
+          <p>Python, Java, JavaScript, TypeScript, HTML/CSS, SQL</p>
+        </div>
+        <div>
+          <h4>Frameworks & Libraries</h4>
+          <p>
+            React.js, Node.js, Express.js, Vue.js, Tailwind, SCSS, Spring Boot,
+            Javalin, JDBC
+          </p>
+        </div>
+        <div>
+          <h4>Tools & Technologies</h4>
+          <p>
+            Git, PostgreSQL, MongoDB Compass, Postman, Figma, VSCode, Android
+            Studio, JUnit, Mockito
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Let’s connect — I’d love to hear from you!</p>
+      <div class="contact-links">
+        <a href="mailto:ssubedi60@gmail.com" class="btn">Email Me</a>
+        <a
+          href="https://www.linkedin.com/in/sumansub/"
+          target="_blank"
+          class="btn-outline"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/SumanSubedi9"
+          target="_blank"
+          class="btn-outline"
+          >GitHub</a
+        >
+        <a href="Suman_Subedi_Resume-1.pdf" download class="btn"
+          >Download Resume</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Suman Subedi Portfolio Website</p>
+    </footer>
   </body>
 </html>
