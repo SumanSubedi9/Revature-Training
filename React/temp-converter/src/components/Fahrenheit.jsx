@@ -1,13 +1,19 @@
-const FahrenheitInput = ({ value, onChange }) => {
+import { useContext } from "react";
+import { TempContext } from "../App";
+
+const FahrenheitInput = () => {
+  const { fahrenheit, handleFahrenheitChange } = useContext(TempContext);
   return (
     <>
       <div className="temp-section">
         <h2>Fahrenheit</h2>
         <input
           type="number"
-          value={value}
+          value={fahrenheit}
           onChange={(e) => {
-            onChange(e.target.value == "" ? "" : Number(e.target.value));
+            handleFahrenheitChange(
+              e.target.value === "" ? "" : Number(e.target.value)
+            );
           }}
           placeholder="Enter Fahrenheit"
         ></input>
